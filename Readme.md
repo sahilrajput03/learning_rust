@@ -1,10 +1,35 @@
 # Readme
 
+## Rust community
+
+https://users.rust-lang.org/
+
 ## Using rustmon
 
 `rustmon fileName.rs` or `rmon fileName.rs`
 
 For e.g., let say you have a rust program `myprogram.rs` then you'd need to run `rustmon myprogram` from the cli to run it in monitor mode.
+
+Global rustfmt.toml file location => PR: https://github.com/rust-lang/rustfmt/pull/3280 .
+
+An ideal Cargo.toml file should be place in the root of folder opened in vscode i.e.,
+
+(Bcoz Vscode's rust extension using command `cargo fmt --all` to format the code and throws error if the Cargo.toml file isn't formatted properly.)
+
+```toml
+[package]
+name = "a-small-rust-app"
+version = "0.1.0"
+
+[[bin]]
+name = "general"
+path = "01_println.rs"
+```
+
+## Formatter with vscode on code save
+
+Simply install [this extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust) and make sure that you have a cargo.toml file in the root of folder that you
+have opened in vscode to make format on save works!
 
 ## Updating rustc via rustup
 
@@ -99,3 +124,23 @@ Create a package with a binary target (src/main.rs). This is the default behavio
 --lib
 Create a package with a library target (src/lib.rs).
 ```
+
+## Snippets from the official rust vscode extension
+
+src: https://github.com/rust-lang/vscode-rust#snippets
+
+```txt
+## Snippets
+Snippets are code templates which expand into common boilerplate. IntelliSense includes snippet names as options when you type; select one by pressing enter. You can move to the next snippet 'hole' in the template by pressing tab. We provide the following snippets:
+
+for - a for loop
+macro_rules - declare a macro
+if let - an if let statement for executing code only when a pattern matches
+spawn - spawn a thread
+extern crate - insert an extern crate statement
+This extension is deliberately conservative about snippets and doesn't include too many. If you want more, check out Trusty Rusty Snippets.
+```
+
+So, fun.. below extension provides many rust snippets and officially recommended from rust vscode extension for snippets.
+
+https://marketplace.visualstudio.com/items?itemName=polypus74.trusty-rusty-snippets

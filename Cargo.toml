@@ -1,0 +1,7 @@
+[package]
+name = "a-small-rust-app"
+version = "0.1.0"
+
+[[bin]]
+name = "general"
+path = "01_println.rs"
