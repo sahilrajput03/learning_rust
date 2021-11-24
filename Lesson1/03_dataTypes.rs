@@ -1,4 +1,5 @@
 fn main() {
+  // Offical types in rust: https://doc.rust-lang.org/std/index.html#primitives
   let x = 45;
   //Here, x is a i32 data type, i.e., a 32 bit signed integer.
   //Also,

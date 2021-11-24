@@ -12,7 +12,7 @@ fn main() {
                              // Nevertheless, there's no standard way to display arbitrary structures
 }
 
-#[derive(Debug)] // <== You can get this fast via directly typing derive<Tab>Debug
+#[derive(Debug)] // <== Get this fast via typing #[der<Tab>
 struct Point {
     x: i32,
     y: i32,

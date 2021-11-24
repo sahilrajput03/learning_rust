@@ -1,3 +1,4 @@
+#[allow(unused_variables)]
 // pg: 54
 // ! Error throwing program.
 fn main() {

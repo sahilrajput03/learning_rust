@@ -16,6 +16,18 @@ https://t.me/rust_community
 
 For e.g., let say you have a rust program `myprogram.rs` then you'd need to run `rustmon myprogram` from the cli to run it in monitor mode.
 
+## Install rust
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+src: https://www.rust-lang.org/tools/install
+
+## System programming
+
+https://en.wikipedia.org/wiki/Systems_programming
+
 ## Formatter with vscode on code save
 
 xxx note xxxx
@@ -24,6 +36,16 @@ xxx note xxxx
 
 Thats how tekipeps did, and it feels amazing as now i don't need to Cargo.toml in any opened folder in vscode so vsocode can format the files and `rustfmt.toml` works as expected!!
 Yikes!
+
+```bash
+Also info from rust-analyzer (from its extension):
+rust-analyzer
+Provides support for rust-analyzer: novel LSP server for the Rust programming language.
+
+Note the extension may cause conflicts with the official Rust extension. It is recommended to disable the Rust extension when using the rust-analyzer extension.
+
+Note the project is in alpha status: it is already useful in practice, but can't be considered stable.
+```
 
 Simply install [this extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust) and make sure that you have a cargo.toml file in the root of folder that you
 have opened in vscode to make format on save works!
@@ -99,7 +121,7 @@ rustup update
 
 - [Rust Plaground](https://play.rust-lang.org/)
 
-- [Usage of semicolons in rust](https://stackoverflow.com/a/26665514/13994126 'Usage of semicolons in rust')
+- [Usage of semicolons in rust](https://stackoverflow.com/a/26665514/13994126 "Usage of semicolons in rust")
 
 - [Official Conferences and playlists](https://www.youtube.com/channel/UCaYhcUwRBNscFNUKTjgPFiA)
 
