@@ -1,0 +1,6 @@
+*.pdb
+*.exe
+**/target
+**.o
+gitignored
+.binary

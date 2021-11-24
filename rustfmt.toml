@@ -1,0 +1,12 @@
+tab_spaces = 4
+
+# learn using modules in rust i.e., code splitting things!, yikes!!
+
+# Documentation at =>  https://rust-lang.github.io/rustfmt/?version=v1.4.36&search=#tab_spaces
+
+# rustfmt is an official formatter from rust only, yikes!
+
+# You can run format via cli with `rustfmt fileName` too.
+# .toml language: https://en.wikipedia.org/wiki/TOML
+
+# Also added the same .rustfmt.toml file to global config place i.e., @ "C:\Users\chetan\AppData\Roaming\rustfmt\.rustfmt.toml".
