@@ -4,6 +4,60 @@
 
 https://doc.rust-lang.org/book/
 
+## println! is a macro, what else is macro in rust?
+
+https://doc.rust-lang.org/std/index.html#macros
+
+## Comprehensive guide to the Rust standard library APIs.
+
+(amazing glossary of things in rust ~sahil)
+
+https://doc.rust-lang.org/std/index.html
+
+(the standard library)
+
+src: https://www.rust-lang.org/learn
+
+## Guide to editions of rust
+
+https://doc.rust-lang.org/edition-guide/index.html
+
+(edition guide)
+
+src: https://www.rust-lang.org/learn
+
+## A book on Rust’s package manager and build system - Cargo
+
+https://doc.rust-lang.org/cargo/index.html
+
+(cargo book)
+
+src: https://www.rust-lang.org/learn
+
+## Learn how to make awesome documentation for your crate.
+
+https://doc.rust-lang.org/rustdoc/index.html
+
+(rustdoc book)
+
+src: https://www.rust-lang.org/learn
+
+## Familiarize yourself with the knobs available in the Rust compiler.
+
+https://doc.rust-lang.org/rustc/index.html
+
+(rustc book)
+
+src: https://www.rust-lang.org/learn
+
+## In-depth explanations of the errors you may see from the Rust compiler.
+
+https://doc.rust-lang.org/error-index.html
+
+(compiler error index)
+
+src: https://doc.rust-lang.org/error-index.html
+
 ## Rust community
 
 https://users.rust-lang.org/
