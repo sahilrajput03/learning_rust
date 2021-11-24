@@ -1,5 +1,9 @@
 # Readme
 
+## Official Rust book
+
+https://doc.rust-lang.org/book/
+
 ## Rust community
 
 https://users.rust-lang.org/
