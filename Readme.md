@@ -1,12 +1,22 @@
 # Readme
 
+## println! is a macro, what else is macro in rust?
+
+https://doc.rust-lang.org/std/index.html#macros
+
 ## Official Rust book
 
 https://doc.rust-lang.org/book/
 
-## println! is a macro, what else is macro in rust?
+## Amazing rustlings game course
 
-https://doc.rust-lang.org/std/index.html#macros
+https://github.com/rust-lang/rustlings/
+
+## Amazing rust by example book
+
+https://doc.rust-lang.org/stable/rust-by-example/
+
+Another awesome book with name "Rust programming by example ~ Guillaume Gomez and Antoni Boucher"
 
 ## Comprehensive guide to the Rust standard library APIs.
 
@@ -58,7 +68,7 @@ https://doc.rust-lang.org/error-index.html
 
 src: https://doc.rust-lang.org/error-index.html
 
-## Rust community
+# Rust community
 
 https://users.rust-lang.org/
 
