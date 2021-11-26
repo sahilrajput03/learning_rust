@@ -1,4 +1,4 @@
-// pg 57
+// pg 57 - Copy types
 // We can make our own types Copy by adding derive to them:
 
 #[derive(Clone, Copy)]

@@ -1,3 +1,4 @@
+// a structure allows us to get multiple values under the same variable:
 fn main() {
     let point = Point { x: 24, y: 42 };
 
