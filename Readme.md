@@ -2,6 +2,10 @@
 
 Learn rust - https://www.rust-lang.org/learn
 
+## Primitive types
+
+https://doc.rust-lang.org/std/index.html#primitives
+
 ## println! is a macro, what else is macro in rust?
 
 https://doc.rust-lang.org/std/index.html#macros
