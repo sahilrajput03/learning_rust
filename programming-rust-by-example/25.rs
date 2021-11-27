@@ -11,6 +11,7 @@ trait BitSet {
     fn clear(&mut self, index: usize);
     fn is_set(&self, index: usize) -> bool;
     fn set(&mut self, index: usize);
+    // we could have defined the function body of any of the above method, check pg. 69.
 }
 impl BitSet for u64 {
     fn clear(&mut self, index: usize) {
