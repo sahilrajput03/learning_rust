@@ -12,9 +12,7 @@ https://doc.rust-lang.org/std/index.html#primitives
 
 https://doc.rust-lang.org/book/appendix-02-operators.html#operators
 
-## signed integer
-
-[read more here](topic-signedUnsigned.md)
+## signed integer [read more here](topic-signedUnsigned.md)
 
 ## println! is a macro, what else is macro in rust?
 
