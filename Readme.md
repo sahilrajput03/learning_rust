@@ -6,6 +6,16 @@ Learn rust - https://www.rust-lang.org/learn
 
 https://doc.rust-lang.org/std/index.html#primitives
 
+**Data types - Chapter in officila book**: https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types
+
+## Operators 
+
+https://doc.rust-lang.org/book/appendix-02-operators.html#operators
+
+## signed integer
+
+[topic-signedUnsigned.md]
+
 ## println! is a macro, what else is macro in rust?
 
 https://doc.rust-lang.org/std/index.html#macros
