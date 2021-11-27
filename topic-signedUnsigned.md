@@ -1,6 +1,8 @@
 
 # Signed/Unsigned integers
 
+src: https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types
+
 A signed integer is a 32-bit that encodes an integer in the range [-2147483648 to 2147483647]. I.e., -2^31 -> +2^31
 
 Below knowledge from rust book: 
@@ -24,4 +26,3 @@ Binary	    0b1111_0000
 Byte (u8 only)	b'A'
 
 So how do you know which type of integer to use? If you’re unsure, Rust’s defaults are generally good places to start: integer types default to i32. The primary situation in which you’d use isize or usize is when indexing some sort of collection.
-src: https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types
