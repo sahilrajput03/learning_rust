@@ -14,6 +14,7 @@ trait BitSet {
     // we could have defined the function body of any of the above method, check pg. 69.
 }
 impl BitSet for u64 {
+    //  The isize and usize types depend on the kind of computer your program is running on: 64 bits if you’re on a 64-bit architecture and 32 bits if you’re on a 32-bit architecture.
     fn clear(&mut self, index: usize) {
         *self &= !(1 << index);
         //? Learn rust: Bitwise AND and assignment: var &= expr

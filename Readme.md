@@ -8,6 +8,10 @@ https://doc.rust-lang.org/std/index.html#primitives
 
 **Data types - Chapter in officila book**: https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types
 
+##### `isize` and `usize`:
+
+The isize and usize types depend on the kind of computer your program is running on: 64 bits if you’re on a 64-bit architecture and 32 bits if you’re on a 32-bit architecture.
+
 ## Operators 
 
 https://doc.rust-lang.org/book/appendix-02-operators.html#operators
