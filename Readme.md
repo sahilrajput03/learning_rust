@@ -54,6 +54,12 @@ https://doc.rust-lang.org/book/
 
 https://github.com/rust-lang/rustlings/
 
+**Install**: [Manual Install@RustlingsRepo](https://github.com/rust-lang/rustlings/#manually)
+
+__SELF NOTES:: Installed in this repo in `rustlings` folder.__
+
+__USE rustlings cli tool from the rustlings folder to start the game.__
+
 ## Amazing rust by example book
 
 https://doc.rust-lang.org/stable/rust-by-example/
