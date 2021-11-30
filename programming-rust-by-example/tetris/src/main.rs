@@ -6,9 +6,39 @@ use sdl2::{
     keyboard::Keycode,
     pixels::Color,
     rect::Rect,
-    render::{Texture, TextureCreator},
+    render::{Canvas, Texture, TextureCreator},
+    video::{Window, WindowContext},
 };
 use std::{thread::sleep, time::Duration};
+
+#[derive(Clone, Copy)]
+enum TextureColor {
+    Green,
+    Blue,
+}
+
+fn create_texture_rect<'a>(
+    canvas: &mut Canvas<Window>,
+    texture_creator: &'a TextureCreator<WindowContext>,
+    color: TextureColor,
+    size: u32,
+) -> Option<Texture<'a>> {
+    // We'll want to handle failures outside of this function.
+    if let Ok(mut square_texture) = texture_creator.create_texture_target(None, size, size) {
+        canvas
+            .with_texture_canvas(&mut square_texture, |texture| {
+                match color {
+                    TextureColor::Green => texture.set_draw_color(Color::RGB(0, 255, 0)),
+                    TextureColor::Blue => texture.set_draw_color(Color::RGB(0, 0, 255)),
+                }
+                texture.clear();
+            })
+            .expect("Failed to color a texture");
+        Some(square_texture)
+    } else {
+        None
+    }
+}
 
 pub fn main() {
     let sdl_context = sdl2::init().expect("SDL initialization failed"); // initializing sdl2 cotext.
