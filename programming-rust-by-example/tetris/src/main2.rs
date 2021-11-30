@@ -1,3 +1,4 @@
+// this if final code of blinking sqare from pg. 110.
 extern crate sdl2;
 use sdl2::event::Event;
 use sdl2::keyboard::Keycode;

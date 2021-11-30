@@ -2,6 +2,9 @@
 
 Learn rust - https://www.rust-lang.org/learn
 
+## > << >>
+Continue book rust programming with example from pg. 118.
+
 ## Install cargo-watch to watch over a project
 
 Cargo installs all binaries to `~/.cargo/bin` directory as state in [docs here](https://doc.rust-lang.org/cargo/commands/cargo-install.html#description).

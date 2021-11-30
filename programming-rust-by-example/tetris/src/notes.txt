@@ -1,0 +1,9 @@
+main2.rs => copied code for static red coloured box in the canvas.
+
+main.rs => copied code for alternating coloured box in the canvas.
+
+Both codes are directly copy-pasted from the page no. written in top of each files.
+
+Tip: You can use Esc key to escape out of the window.
+
+Tip: Use `cargo watch -x run` to run the project in watch mode.
