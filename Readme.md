@@ -2,6 +2,26 @@
 
 Learn rust - https://www.rust-lang.org/learn
 
+## Install cargo-watch to watch over a project
+
+Cargo installs all binaries to `~/.cargo/bin` directory as state in [docs here](https://doc.rust-lang.org/cargo/commands/cargo-install.html#description).
+Install: `ls ~/.cargo/bin/`
+
+Crate: https://crates.io/crates/cargo-watch, Docs: https://docs.rs/crate/cargo-watch/7.0.2
+
+Usage: 
+
+```
+#Watch for ``cargo run``
+$ cargo watch -x run
+$ cargo-watch -x run # Notice the dash between cargo and watch.
+
+#Watch for ``cargo check``
+$ cargo watch #OR cargo watch -x check
+
+#Look for more command in Crate docs.
+```
+
 ## Primitive types
 
 https://doc.rust-lang.org/std/index.html#primitives

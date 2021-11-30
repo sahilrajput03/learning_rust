@@ -1,0 +1,11 @@
+[package]
+name = "tetris"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sdl2 = "0.30.0"
+# sdl2 = { git = "https://github.com/Rust-SDL2/rust-sdl2" }
+# ^^ that would fetch the latest version from github, yikes!
