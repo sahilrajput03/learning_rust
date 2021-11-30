@@ -1,3 +1,5 @@
+NOTE: PLEASE use `cp someFile main.rs` command to copy to the target dest to test that file.
+
 main2.rs => copied code for static red coloured box in the canvas.
 
 main.rs => copied code for alternating coloured box in the canvas.
