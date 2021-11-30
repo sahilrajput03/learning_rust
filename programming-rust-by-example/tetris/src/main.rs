@@ -9,7 +9,10 @@ use sdl2::{
     render::{Canvas, Texture, TextureCreator},
     video::{Window, WindowContext},
 };
-use std::{thread::sleep, time::Duration};
+use std::{
+    thread::sleep,
+    time::{Duration, SystemTime},
+};
 
 #[derive(Clone, Copy)]
 enum TextureColor {
@@ -73,18 +76,36 @@ pub fn main() {
     let texture_creator: TextureCreator<_> = canvas.texture_creator();
 
     // We create a texture with a 32x32 size.
-    let mut square_texture: Texture = texture_creator
-        .create_texture_target(None, TEXTURE_SIZE, TEXTURE_SIZE)
-        .expect("Failed to create a texture");
+    // let mut square_texture: Texture = texture_creator
+    //     .create_texture_target(None, TEXTURE_SIZE, TEXTURE_SIZE)
+    //     .expect("Failed to create a texture");
 
-    // We use the canvas to draw into our square texture.
-    canvas
-        .with_texture_canvas(&mut square_texture, |texture| {
-            // We set the draw color to green.
-            texture.set_draw_color(Color::RGB(0, 255, 0));
-            texture.clear() // washes/clears the texture so it'll be filled with green.
-        })
-        .expect("Failed to color a texture.");
+    let green_square = create_texture_rect(
+        &mut canvas,
+        &texture_creator,
+        TextureColor::Green,
+        TEXTURE_SIZE,
+    )
+    .expect("Failed to create a texture");
+
+    let mut blue_square = create_texture_rect(
+        &mut canvas,
+        &texture_creator,
+        TextureColor::Blue,
+        TEXTURE_SIZE,
+    )
+    .expect("Failed to create a texture");
+
+    let timer = SystemTime::now();
+
+    // We use the canvas to draw into our square texture-for-older no-blink code.
+    // canvas
+    //     .with_texture_canvas(&mut square_texture, |texture| {
+    //         // We set the draw color to green.
+    //         texture.set_draw_color(Color::RGB(0, 255, 0));
+    //         texture.clear() // washes/clears the texture so it'll be filled with green.
+    //     })
+    //     .expect("Failed to color a texture.");
 
     // First we get the event handler:
     let mut event_pump = sdl_context
@@ -111,10 +132,25 @@ pub fn main() {
         canvas.set_draw_color(Color::RGB(255, 0, 0));
         // We draw it.
         canvas.clear();
+
+        // The rectangle switch happens here:
+        let display_green = match timer.elapsed() {
+            Ok(elapsed) => elapsed.as_secs() % 2 == 0,
+            Err(_) => {
+                // In case of error, we do nothing...
+                true
+            }
+        };
+        let square_texture = if display_green {
+            &green_square
+        } else {
+            &blue_square
+        };
+
         // Copy our texture into the window.
         canvas
             .copy(
-                &square_texture,
+                square_texture,
                 None,
                 Rect::new(0, 0, TEXTURE_SIZE, TEXTURE_SIZE), // We copy it at the top-left of the window with a 32x32 size.
             )
