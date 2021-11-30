@@ -15,6 +15,7 @@ Usage:
 #Watch for ``cargo run``
 $ cargo watch -x run
 $ cargo-watch -x run # Notice the dash between cargo and watch.
+$ cw # My personal alias for cargo watch i.e., ```cargo watch -x run```
 
 #Watch for ``cargo check``
 $ cargo watch #OR cargo watch -x check
