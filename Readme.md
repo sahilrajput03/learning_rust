@@ -1,9 +1,15 @@
 # Readme
 
+## mongodb resources
+
+[Official Mongodb Driver for rust](https://docs.mongodb.com/drivers/rust/), [Mongo rust driver@Github](https://github.com/mongodb/mongo-rust-driver/#windows-dns-note)
+
+[Google - Search - Mongodb for rust](https://www.google.com/search?q=mongodb+with+rust&oq=mongodb+with+rust&aqs=chrome..69i57j0i67i433j35i39j0i433i512j0i67j0i433i512j69i65l2.2221j0j1&sourceid=chrome&ie=UTF-8)
+
 Learn rust - https://www.rust-lang.org/learn
 
 ## > << >>
-Continue book rust programming with example from pg. 118.
+Continue book rust programming with example from pg. 129.
 
 ## Install cargo-watch to watch over a project
 
