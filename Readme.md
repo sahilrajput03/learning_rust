@@ -1,5 +1,13 @@
 # Readme
 
+## todo:
+
+Rust's blog: [here](https://blog.rust-lang.org/)
+
+Rust 2020 survey result [here](https://blog.rust-lang.org/2020/12/16/rust-survey-2020.html).
+
+Do check if 2021 survey result is launched or not...
+
 ## mongodb resources
 
 [Official Mongodb Driver for rust](https://docs.mongodb.com/drivers/rust/), [Mongo rust driver@Github](https://github.com/mongodb/mongo-rust-driver/#windows-dns-note)
