@@ -1,5 +1,5 @@
 hard_tabs = true
-# ^^ this forces to use hard tabs instead of using spaces.
+# ^^ this forces to use hard tabs instead of using spaces. Src: https://rust-lang.github.io/rustfmt/?version=v1.4.38&search=#hard_tabs
 
 # tab_spaces = 4
 # ^^ this has no effect if you choose ```hard_tabs = true```.
@@ -10,6 +10,7 @@ hard_tabs = true
 # Documentation at =>  https://rust-lang.github.io/rustfmt/?version=v1.4.36&search=#tab_spaces
 
 # rustfmt is an official formatter from rust only, yikes!
+# Rust analyzer extension reads this rustfmt.toml file to format the code of any .rs file in this project. Source: https://github.com/rust-analyzer/rust-analyzer/issues/1191#issuecomment-1018662166
 
 # You can run format via cli with `rustfmt fileName` too.
 # .toml language: https://en.wikipedia.org/wiki/TOML
