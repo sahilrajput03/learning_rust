@@ -19,7 +19,8 @@ fn main() {
 		let my_string = String::from("Leave+a+like+if+you+enjoyed!");
 		let tokens: Vec<&str> = my_string.split("+").collect();
 
-		println!("At index 2: {}", tokens[2]);
+		println!("SO NEW VECTOR OF MY_STRING IS: {:?}", tokens);
+		// println!("At index 2: {}", tokens[2]);// Printing third element in the vector.
 	}
 
 	{
