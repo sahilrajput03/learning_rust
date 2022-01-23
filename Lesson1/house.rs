@@ -16,3 +16,5 @@ pub mod bedroom2 {
     true
   }
 }
+
+// This file is used in file: ```41_module_in_many_file.rs```.
