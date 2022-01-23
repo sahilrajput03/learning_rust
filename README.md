@@ -1,5 +1,23 @@
 # Readme
 
+## CRATES I am using:
+
+Source: https://crats.io
+Source: https://youtu.be/yNe9Xr35n4Q
+
+- https://crates.io/crates/actix
+- https://crates.io/crates/warp (its a web framework and it uses tokio internally for async functionality, it has web sockets support)
+- [✓] https://crates.io/crates/tide (we're are using tides in our web-server project. Yo!!)
+- https://crates.io/crates/rocket (rocket is a web framework but its downside is like it doens't support async code).
+
+- [✓] sqlx: https://crates.io/crates/sqlx (sqlx is better than diesel coz it has better error handling and it's easier to use.)
+- diesel: https://crates.io/crates/diesel
+
+- [✓] async-std: https://crates.io/crates/async-std
+
+- [✓] yew: https://crates.io/crates/yew (its frontend framework and it'll build web assembly code so our rust runs on browser)
+- maud: https://crates.io/crates/maud ( 1.1k stars on github; it is provides a macro html! which is analogous to jsx in javasrcipt)
+- [] typed-html: https://crates.io/crates/typed-html ( ITS BETTER SUPPORTED THAN ```maud```; 1.7k stars on github; it is a macro for html! which is analogous to jsx in javasrcipt)
 ## todo:
 
 Rust's blog: [here](https://blog.rust-lang.org/)
@@ -16,7 +34,8 @@ Do check if 2021 survey result is launched or not...
 
 Learn rust - https://www.rust-lang.org/learn
 
-## > << >>
+## IMPORTANT >> NOW <<>> > << >>
+
 Continue book rust programming with example from pg. 129.
 
 ## Install cargo-watch to watch over a project
@@ -140,7 +159,7 @@ https://t.me/rust_community
 
 `rustmon fileName.rs` or `rmon fileName.rs`
 
-For e.g., let say you have a rust program `myprogram.rs` then you'd need to run `rustmon myprogram` from the cli to run it in monitor mode.
+For e.g., let say you have a rust program `myprogram.rs` then you'd need to run `rustmon myprogram.rs` from the cli to run it in monitor mode.
 
 ## Install rust
 
@@ -308,3 +327,4 @@ This extension is deliberately conservative about snippets and doesn't include t
 So, fun.. below extension provides many rust snippets and officially recommended from rust vscode extension for snippets.
 
 https://marketplace.visualstudio.com/items?itemName=polypus74.trusty-rusty-snippets
+
