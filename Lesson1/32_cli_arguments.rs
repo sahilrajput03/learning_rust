@@ -1,7 +1,7 @@
 use std::env;
 
 fn main() {
-  let args: Vec<String> = env::args().collect();
+	let args: Vec<String> = env::args().collect();
 
-  println!("{:?}", args);
+	println!("{:?}", args);
 }

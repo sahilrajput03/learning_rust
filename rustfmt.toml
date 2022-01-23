@@ -1,4 +1,9 @@
-tab_spaces = 4
+hard_tabs = true
+# ^^ this forces to use hard tabs instead of using spaces.
+
+# tab_spaces = 4
+# ^^ this has no effect if you choose ```hard_tabs = true```.
+# Actally I am using some settings, you can check those in ```.vscode/settings.json``` file.
 
 # learn using modules in rust i.e., code splitting things!, yikes!!
 

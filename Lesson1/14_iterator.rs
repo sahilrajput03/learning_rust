@@ -1,19 +1,19 @@
 fn main() {
-  is_even_or_odd(6);
+	is_even_or_odd(6);
 }
 
 fn is_even_or_odd(num: u32) {
-  for n in 1..num {
-    if is_even(n) {
-      println!("{} is even.", n);
-    } else {
-      println!("{} is odd.", n)
-    }
-  }
+	for n in 1..num {
+		if is_even(n) {
+			println!("{} is even.", n);
+		} else {
+			println!("{} is odd.", n)
+		}
+	}
 }
 
 fn is_even(num: u32) -> bool {
-  return num % 2 == 0;
+	return num % 2 == 0;
 }
 
 //Output:

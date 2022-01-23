@@ -6,5 +6,5 @@
 //
 // Multiple rules in single line↓↓
 #[allow(unused_variables, unused_parens, dead_code, unused_mut)] //This is also legit too.
-                                                                 // Comment after above statements are legit too.
+																 // Comment after above statements are legit too.
 fn main() {}

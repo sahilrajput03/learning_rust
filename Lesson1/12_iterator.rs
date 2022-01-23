@@ -4,9 +4,9 @@
 const MY_VARIABLE: u8 = 3;
 const MAXIMUM_NUMBER: u8 = 20;
 fn main() {
-  //We can use `const MAXIMUM_NUMBER: u8 = 20;` here too.
-  for n in 1..MAXIMUM_NUMBER {
-    println!("{}", n);
-  }
-  // MAXIMUM_NUMBER = 34 // We'll get `left-hand of expression is not valid` coz we can't re-initialize the value of constant.
+	//We can use `const MAXIMUM_NUMBER: u8 = 20;` here too.
+	for n in 1..MAXIMUM_NUMBER {
+		println!("{}", n);
+	}
+	// MAXIMUM_NUMBER = 34 // We'll get `left-hand of expression is not valid` coz we can't re-initialize the value of constant.
 }
