@@ -1,0 +1,3 @@
+edition = "2018"
+# ^^^^^^^^^^^^ It is important to be able to format code like (src: https://github.com/rust-lang/rustfmt/issues/3149#issuecomment-433925016): 
+# app.at("/").get(|_| async move { Ok("Hello from api.") }); 
