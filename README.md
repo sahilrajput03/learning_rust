@@ -213,6 +213,10 @@ xxx note xxxx
 Thats how tekipeps did, and it feels amazing as now i don't need to Cargo.toml in any opened folder in vscode so vsocode can format the files and `rustfmt.toml` works as expected!!
 Yikes!
 
+You can use
+
+LEARN: `rustfmt <fileName>` to format a file as well.
+
 ```bash
 Also info from rust-analyzer (from its extension):
 rust-analyzer

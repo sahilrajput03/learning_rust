@@ -1,8 +1,10 @@
 #![allow(unused_mut)]
 
 fn main() {
-	// let my_vector: Vec<i32> = Vec::new();// One way to create a vector(but its a little difficult way though.)
-	let mut my_vector = vec![10, 20, 30, 40];
+	// let my_vector: Vec<i32> = Vec::new(); // We are defining empty vector with i32 type here.
+	// let mut my_vector = vec![10, 20, "50"];//! This would throw error coz vector expects same type of elements.
+	// let mut my_vector: Vec<i32> = vec![10, 20, 30, 40]; //? WORKS GOOD:: Here we are giving types to vector elements.
+	let mut my_vector = vec![10, 20, 30, 40]; // Here we infer types at compile time.
 
 	println!("Element at index 2 in vector: {}\n", my_vector[2]); // prints value at index 2 i.e., '3'
 	println!("");

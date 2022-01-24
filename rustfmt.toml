@@ -11,6 +11,7 @@ hard_tabs = true
 
 # rustfmt is an official formatter from rust only, yikes!
 # Rust analyzer extension reads this rustfmt.toml file to format the code of any .rs file in this project. Source: https://github.com/rust-analyzer/rust-analyzer/issues/1191#issuecomment-1018662166
+# LEARN: You can use ```rustfmt <fileName>``` to format a file.
 
 # You can run format via cli with `rustfmt fileName` too.
 # .toml language: https://en.wikipedia.org/wiki/TOML
