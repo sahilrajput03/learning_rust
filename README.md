@@ -1,23 +1,46 @@
 # Readme
 
-## CRATES I am using:
+**more -> global installs**
 
-Source: https://crats.io
-Source: https://youtu.be/yNe9Xr35n4Q
+- `cargo-edit` : https://crates.io/crates/cargo-edit
 
-- https://crates.io/crates/actix
-- https://crates.io/crates/warp (its a web framework and it uses tokio internally for async functionality, it has web sockets support)
-- [✓] https://crates.io/crates/tide (we're are using tides in our web-server project. Yo!!)
-- https://crates.io/crates/rocket (rocket is a web framework but its downside is like it doens't support async code).
+```bash
+cargo install cargo-edit
 
-- [✓] sqlx: https://crates.io/crates/sqlx (sqlx is better than diesel coz it has better error handling and it's easier to use.)
-- diesel: https://crates.io/crates/diesel
+# Usage:
+cargo add pkg-name1 pkg-name2 ... # It wil add latest version of package with its version to your cargo.toml file automatically.
 
-- [✓] async-std: https://crates.io/crates/async-std
+```
 
-- [✓] yew: https://crates.io/crates/yew (its frontend framework and it'll build web assembly code so our rust runs on browser)
-- maud: https://crates.io/crates/maud ( 1.1k stars on github; it is provides a macro html! which is analogous to jsx in javasrcipt)
-- [] typed-html: https://crates.io/crates/typed-html ( ITS BETTER SUPPORTED THAN ```maud```; 1.7k stars on github; it is a macro for html! which is analogous to jsx in javasrcipt)
+- `cargo-whatfeatures`: https://crates.io/crates/cargo-whatfeatures
+
+```bash
+cargo install cargo-whatfeatures
+
+# Usage:
+cargo whatfeatures package-name-here # Shows you the available features from a package.
+```
+
+- `cargo install` docs:
+
+```bash
+cargo install [options] crate...
+cargo install [options] --path path
+cargo install [options] --git url [crate...] # This one is useful!
+cargo install [options] --list
+
+# FYI: ~sahil i used it to do:
+cargo install --git https://github.com/davidpdrsn/cargo-docserver
+```
+
+**a static http files server with rust**: https://github.com/DenisKolodin/static-server
+
+**tokio is most trusted and used web framework in rust**
+
+- [] tokio: https://crates.io/crates/tokio (14.7k stars@github) (this is used in most libraries for providing non-blocking i/o platoform for writing asynchronous operations)
+- [] hyper: https://crates.io/crates/hyper (9k stars@github)
+- [] async-std: https://crates.io/crates/async-std (3.1k stars@github) (this is similar library to tokio IMO ~Sahil.)
+
 ## todo:
 
 Rust's blog: [here](https://blog.rust-lang.org/)
@@ -45,19 +68,27 @@ Install: `ls ~/.cargo/bin/`
 
 Crate: https://crates.io/crates/cargo-watch, Docs: https://docs.rs/crate/cargo-watch/7.0.2
 
-Usage: 
+Usage:
 
-```
+````bash
 #Watch for ``cargo run``
 $ cargo watch -x run
 $ cargo-watch -x run # Notice the dash between cargo and watch.
 $ cw # My personal alias for cargo watch i.e., ```cargo watch -x run```
 
 #Watch for ``cargo check``
-$ cargo watch #OR cargo watch -x check
+$ cargo watch # Default: `cargo check` i.e: cargo watch -x check
 
+# PRO TIP:
+cargo watch -q -c -x run
+# Here -c or --clear clears the output before each run.
+# -q or --quiet hides the output.
 #Look for more command in Crate docs.
-```
+
+## MY PERSONAL ALIASES FROM .bashrc file:
+alias cw='cargo watch -q -c -x "run -q"'
+#cargo watch --quiet --clear --exec 'run --quiet'
+````
 
 ## Primitive types
 
@@ -69,7 +100,7 @@ https://doc.rust-lang.org/std/index.html#primitives
 
 The isize and usize types depend on the kind of computer your program is running on: 64 bits if you’re on a 64-bit architecture and 32 bits if you’re on a 32-bit architecture.
 
-## Operators 
+## Operators
 
 https://doc.rust-lang.org/book/appendix-02-operators.html#operators
 
@@ -89,9 +120,9 @@ https://github.com/rust-lang/rustlings/
 
 **Install**: [Manual Install@RustlingsRepo](https://github.com/rust-lang/rustlings/#manually)
 
-__SELF NOTES:: Installed in this repo in `rustlings` folder.__
+**SELF NOTES:: Installed in this repo in `rustlings` folder.**
 
-__USE rustlings cli tool from the rustlings folder to start the game.__
+**USE rustlings cli tool from the rustlings folder to start the game.**
 
 ## Amazing rust by example book
 
@@ -327,4 +358,3 @@ This extension is deliberately conservative about snippets and doesn't include t
 So, fun.. below extension provides many rust snippets and officially recommended from rust vscode extension for snippets.
 
 https://marketplace.visualstudio.com/items?itemName=polypus74.trusty-rusty-snippets
-
