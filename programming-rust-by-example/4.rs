@@ -50,3 +50,11 @@ fn to_english(i: i32) -> String {
 		_ => "Number is other than one or two.".to_string(),
 	}
 }
+
+fn long_string(x: &str) -> &str {
+	if x.len() > 10 {
+		"too long"
+	} else {
+		x
+	}
+}
