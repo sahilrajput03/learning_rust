@@ -4,6 +4,15 @@ Making project following from: https://www.youtube.com/watch?v=yNe9Xr35n4Q
 
 ~ David Pedersen
 
+**return ?**
+
+```rs
+function ...{
+	Ok(json)
+	// return Ok(json); // THIS IS THE SAME AS ABOVE.
+}
+```
+
 **Inferring**:
 
 ```rs

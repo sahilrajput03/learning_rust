@@ -31,11 +31,15 @@ async fn main() {
     let mut app: Server<State> = Server::with_state(State { db_pool });
     app.at("/").get(|req: Request<State>| async move {
         println!("request: get @ /");
-        Ok("Hello from api.") // I am returning Ok() here.
+
+        let json = json!([1, 2, 3]);
+
+        Ok(json)
+        // Ok("Hello from api.") // I am returning Ok() here.
     });
 
     app.at("/abc").get(|req: Request<State>| async move {
-        println!("request: get @ /");
+        println!("request: get @ /abc");
         Ok("Hello from api.") // I am returning Ok() here.
     });
 
