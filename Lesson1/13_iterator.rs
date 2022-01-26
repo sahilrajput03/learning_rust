@@ -1,5 +1,8 @@
 fn main() {
 	let tup1 = (101, 102, 103, 104, 105);
+	// What is a tuple:
+	// ? Tuple types are a family of structural types1 for heterogeneous lists of other types.
+	// Src: https://doc.rust-lang.org/reference/types/tuple.html#tuple-types
 
 	println!("{}", tup1.2);
 	// println!("{}", tup1[2]); //LEARN: Throws error!!

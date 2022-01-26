@@ -7,6 +7,11 @@ fn main() {
 	println!("{}", to_english(1));
 	println!("{}", to_english(2));
 	println!("{}", to_english(4));
+
+	// Another way of returning string is via using reference of string: &str
+	println!("{}", long_string("carl is"));
+	println!("{}", long_string("carl is here"));
+	println!("{}", long_string1());
 }
 
 //? RETURNING INTEGER FROM FUNCITON:
@@ -51,6 +56,8 @@ fn to_english(i: i32) -> String {
 	}
 }
 
+// Difference b/w String and str in rust? : https://stackoverflow.com/a/24159874/10012446
+// But what exactly is &str ?: https://stackoverflow.com/a/24159933/10012446
 fn long_string(x: &str) -> &str {
 	if x.len() > 10 {
 		"too long"
@@ -58,3 +65,21 @@ fn long_string(x: &str) -> &str {
 		x
 	}
 }
+
+// fn long_string1() -> &str {// that throws error like below:
+/* //
+! expected named lifetime parameter
+! help: this function's return type contains a borrowed value, but there is no value for it to be borrowed from
+! help: consider using the `'static` lifetime; fn long_string1() -> &'static str
+*/
+fn long_string1() -> &'static str {
+	if true {
+		"too long"
+	} else {
+		"not too long"
+	}
+}
+
+// Read awesome text about lifetimes in rust: ~sahil.
+// https://stackoverflow.com/a/43080280/10012446
+// https://stackoverflow.com/a/69598116/10012446
