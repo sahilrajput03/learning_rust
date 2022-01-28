@@ -9,7 +9,6 @@ cargo install cargo-edit
 
 # Usage:
 cargo add pkg-name1 pkg-name2 ... # It wil add latest version of package with its version to your cargo.toml file automatically.
-
 ```
 
 - `cargo-whatfeatures`: https://crates.io/crates/cargo-whatfeatures
