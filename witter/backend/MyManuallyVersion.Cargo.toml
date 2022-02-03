@@ -1,0 +1,34 @@
+[package]
+name = "witter-backend"
+version = "0.1.0"
+# edition = "2021"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-std = {version = "1.6.5", features = ["attributes", "unstable"]}
+chrono = "0.4.19"
+dotenv = "0.15.0"
+dotenv_codegen = "0.15.0"
+log = "0.4.14"
+pretty_env_logger = "0.4.0"
+serde = {version = "1.0.135", features = [ "derive" ]}
+serde_json = "1.0.78"
+thiserror = "1.0.30"
+# sqlx = {version = "0.5.10", features = ["runtime-async-std-native-tls", "macros", "chrono", "json", "postgres", "uuid" ]}
+# I AM USING PACKAGE VERSIONS DIRECTLY FROM: https://github.com/davidpdrsn/witter/blob/master/backend/Cargo.toml NOW!!
+sqlx = { version = "0.3", features = ["runtime-async-std", "macros", "chrono", "json", "postgres", "uuid"] }
+tide = "0.16.0"
+uuid = "0.8.2"
+assert-json-diff = "2.0.1"
+http-service = "0.5.0"
+futures = "0.3.19"
+http-types = "2.12.0"
+http-service-mock = "0.5.0"
+async-trait = "0.1.52"
+
+[dev-dependencies]
+http-service-mock = "0.5.0"
+
+# cargo add tide sqlx dotenv pretty_env_logger chrono log async-std

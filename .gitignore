@@ -4,3 +4,4 @@
 **.o
 gitignored
 .binary
+witter/backend/src/B2.rs

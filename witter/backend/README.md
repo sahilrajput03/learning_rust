@@ -1,8 +1,36 @@
 # README
 
-Making project following from: https://www.youtube.com/watch?v=yNe9Xr35n4Q
+## Runninng tips:
 
-~ David Pedersen
+`cw` my alias of `cargo watch -x run` or `cargo watch -q -c -x "run -q"'`
+
+`ct` will run `cargo watch -x test`
+
+**Other:**
+
+`ca` aliased to `cargo`
+
+`ca r` will run `cargo run`
+
+`ca t` will run `cargo test`
+
+`ca add my-pkg` will add package to `cargo.toml` via `cargo add my-pkg` command.
+
+
+Making project following from: https://www.youtube.com/watch?v=yNe9Xr35n4Q ~ David Pedersen
+
+Source code of the final project from author: https://github.com/davidpdrsn/witter/tree/master/backend/src/tests
+
+**other wow info** :
+
+
+
+- Whats so special with `async-trait` ?? Ans. With naitve rust, we cannot make `async` keyword with a function inside a trait by using a library called `async-trait` library, this is made by guy i.e., `dtolnay` (he is also the owner of libraries like: anyhow, thiserror, serde and some other popular libraries).
+
+- Serde is the serializatin and deserialization library we're using.
+
+- Rust Analyzer does work with go-to definition feature even when we have glob imports in rust (i.e, `use my_modules::*`), yikes!
+- 
 
 **return ?**
 
@@ -84,3 +112,5 @@ Source: https://youtu.be/yNe9Xr35n4Q
 - [] typed-html: https://crates.io/crates/typed-html ( ITS BETTER SUPPORTED THAN `maud`; 1.7k stars on github; it is a macro for html! which is analogous to jsx in javasrcipt)
 
 - [✓] dotenv_codegen: https://crates.io/crates/dotenv
+
+- [✓] assert-json-diff (by David Pedersen): https://crates.io/crates/assert-json-diff
