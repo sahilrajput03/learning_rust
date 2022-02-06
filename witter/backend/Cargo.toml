@@ -1,31 +1,24 @@
 [package]
-name = "backend"
+name = "witter-backend"
 version = "0.1.0"
-authors = ["David Pedersen <david.pdrsn@gmail.com>"]
-edition = "2018"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-async-std = { version = "1.6", features = ["attributes", "unstable"] }
-tide = "0.13"
+async-std = {version = "1.10.0", features = ["attributes", "unstable"]}
+chrono = "0.4.19"
+dotenv = "0.15.0"
+dotenv_codegen = "0.15.0"
+log = "0.4.14"
+pretty_env_logger = "0.4.0"
+serde = {version = "1.0.135", features = [ "derive" ]}
+serde_json = "1.0.78"
+thiserror = "1.0.30"
+# sqlx = {version = "0.5.10", features = ["runtime-async-std-native-tls", "macros", "chrono", "json", "postgres", "uuid" ]}
+# I AM USING PACKAGE VERSIONS DIRECTLY FROM: https://github.com/davidpdrsn/witter/blob/master/backend/Cargo.toml NOW!!
 sqlx = { version = "0.3", features = ["runtime-async-std", "macros", "chrono", "json", "postgres", "uuid"] }
-dotenv = "0.15"
-pretty_env_logger = "0.4"
-chrono = "0.4"
-log = "0.4"
-serde = { version = "1", features = ["derive"] }
-serde_json = "1"
-uuid = { version = "0.8", features = ["serde", "v4"] }
-thiserror = "1"
-futures = { version = "0.3", features = ["compat"] }
-rand = "0.7"
-argonautica = "0.2"
-failure = "0.1"
-regex = "1"
-lazy_static = "1"
-# shared = { path = "../shared", version = "0.1.0" }
-async-trait = "0.1"
+tide = "0.16.0"
+uuid = "0.8.2"
 
-[dev-dependencies]
-assert-json-diff = "1.1.0"
+# cargo add tide sqlx dotenv pretty_env_logger chrono log async-std
