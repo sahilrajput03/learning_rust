@@ -1,5 +1,35 @@
 # Readme
 
+## IMPORTANT: Attributes can be crate level (i.e., once for the complete file ~Sahil) or it can be particular to a struct, module, function, etc.
+
+You can either:
+
+Source: https://stackoverflow.com/a/25877389/10012446
+
+- Add an allow attribute on a struct, module, function, etc.:
+
+```rs
+#[allow(dead_code)]
+struct SemanticDirection;
+// So dead_code attibute will only apply to this struct only.
+```
+
+- **Add a crate-level allow attribute; notice the `!`**: `#![allow(dead_code, unused)]`
+
+**FYI:**: `allow(unused)` will supress all nested warning as well like: `allow(unused_mut, unused_variables, ... and many more..)`.
+
+- Pass it to rustc: `rustc -A dead_code main.rs`
+
+- Pass it using cargo via the RUSTFLAGS environment variable: `RUSTFLAGS="$RUSTFLAGS -A dead_code" cargo build`
+
+## Creating new project:
+
+```bash
+cargo init --bin my-project
+# or
+cargo init --lib my-library
+```
+
 **more -> global installs**
 
 - `cargo-edit` : https://crates.io/crates/cargo-edit
@@ -208,6 +238,8 @@ https://en.wikipedia.org/wiki/Systems_programming
 xxx note xxxx
 
 ### Simply use rust-analyzer and uninstall origianl rust vscode extension
+
+If you have some async code in your project then you must have a `rustfmt.toml` file in the root of your **ANY NESTED** project (with content: `edition = "2018"`) to make rust formatter work for that project too otherwise the files won't format at all. UPDATED AT: 4 FEB, 2022.
 
 Thats how tekipeps did, and it feels amazing as now i don't need to Cargo.toml in any opened folder in vscode so vsocode can format the files and `rustfmt.toml` works as expected!!
 Yikes!

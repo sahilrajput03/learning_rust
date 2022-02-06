@@ -16,23 +16,18 @@
 
 `ca add my-pkg` will add package to `cargo.toml` via `cargo add my-pkg` command.
 
-
 Making project following from: https://www.youtube.com/watch?v=yNe9Xr35n4Q ~ David Pedersen
 
 Source code of the final project from author: https://github.com/davidpdrsn/witter/tree/master/backend/src/tests
 
 **other wow info** :
 
-
-
-- Whats so special with `async-trait` ?? Ans. With naitve rust, we cannot make `async` keyword with a function inside a trait by using a library called `async-trait` library, this is made by guy i.e., `dtolnay` (he is also the owner of libraries like: anyhow, thiserror, serde and some other popular libraries).
+- Whats so special with `async-trait` ?? Ans. With naitve rust, we cannot make `async` keyword with a function inside a trait. But we do make a way to do it by using a library called `async-trait` library, this is made by guy i.e., `dtolnay` (he is also the owner of libraries like: `anyhow`, `thiserror`, `serde` and some other popular libraries).
 
 - Serde is the serializatin and deserialization library we're using.
 
 - Rust Analyzer does work with go-to definition feature even when we have glob imports in rust (i.e, `use my_modules::*`), yikes!
-- 
-
-**return ?**
+- **return ?**
 
 ```rs
 function ...{

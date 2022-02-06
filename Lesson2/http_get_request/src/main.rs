@@ -1,26 +1,15 @@
 #[allow(dead_code)]
 mod easy_way;
 mod other;
+use async_std::task::block_on; //? IMPORTANT: async_std only seems to work via adding features from it ```async-std = { version = "1", features = ["attributes", "tokio1"] }```, source: https://stackoverflow.com/a/68401216/10012446
 
-#[allow(dead_code)]
-fn test1() {
-	easy_way::make_get_request()
-		.map_err(|err| println!("WE GOT ERROR, SAHIL::::::: {:#?}", err)) //This is the way to get our error and result mapped, from stackoverflow.
-		.ok(); // This helps remove warning*1.
-}
+// ? MUST READ ASYNC PROGRAMMING IN RUST - OFFICIAL BOOK - https://rust-lang.github.io/async-book/
 
-#[allow(dead_code)]
-fn test2() {
-	// other::main(); // << Throws warning: //? warning: unused `std::result::Result` that must be used other::main()
-	// other::main().ok(); // This fixes the warning.
-
-	let result = other::main(); // This is another way to fix above warning.
-	println!("I got resut as: {:?}", result); // ? Output: I got resut as: Ok(())
-}
-
+#[allow(unused_must_use)]
 fn main() {
-	// test1();
-	test2();
+	// other::fun1();
+	block_on(other::fun2());
+	// easy_way::main();
 }
 
 //docs @ https://docs.rs/reqwest/0.11.0/reqwest/
