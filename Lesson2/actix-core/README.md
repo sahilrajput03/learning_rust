@@ -13,7 +13,7 @@ Reason: https://www.techempower.com/benchmarks/#section=data-r18
 sudo npm i -g autocannon
 
 # Running server and benchmarking:
-cargo run
+cargo run --release # This would run in production profile instead of running ``cargo run``.
 autocannon -c 15000 -d 5 localhost:8080
 ```
 
