@@ -4,6 +4,10 @@ Source of code: https://actix.rs/docs/getting-started/
 
 # Benchmarking performance:
 
+Why I am so curious about performance noww..?
+
+Reason: https://www.techempower.com/benchmarks/#section=data-r18
+
 ```bash
 # Installing autocannot, a benchmarking tool for servers:
 sudo npm i -g autocannon
