@@ -1,5 +1,10 @@
 # Readme
 
+Try out:
+- cargo tree: https://doc.rust-lang.org/cargo/commands/cargo-tree.html
+- cargo outdate: https://crates.io/crates/cargo-outdated/0.10.2/dependencies
+
+
 ## IMPORTANT: Attributes can be crate level (i.e., once for the complete file ~Sahil) or it can be particular to a struct, module, function, etc.
 
 You can either:

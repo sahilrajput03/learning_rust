@@ -2,13 +2,14 @@
 // Get a slice out of Array a where the ??? is so that the test passes.
 // Execute `rustlings hint primitive_types4` for hints!!
 
-// I AM NOT DONE
+//? I AM NOT DONE
 
 #[test]
 fn slice_out_of_array() {
 	let a = [1, 2, 3, 4, 5];
 
-	let nice_slice = &s[0..5];
+	//? LEARN: This is how easy array slicing is in rust.
+	let nice_slice = &a[1..4];
 
 	assert_eq!([2, 3, 4], nice_slice)
 }

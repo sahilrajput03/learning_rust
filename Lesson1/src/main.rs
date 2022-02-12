@@ -1,0 +1,4 @@
+fn main() {
+	// I CREATED THIS FILE TO SUPRESS ERROR FROM RUST-ANALYZER NVIM PLUGIN ONLY!
+	println!("Hello");
+}

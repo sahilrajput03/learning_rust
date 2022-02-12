@@ -22,7 +22,7 @@ async fn main() {
     let db_url = env::var("DATABASE_URL").unwrap();
     let db_pool: PgPool = Pool::new(&db_url).await.unwrap();
 
-    println!("DATABASE_URL IS: {}", db_url);
+    println!("DATABASE_URL IS:aa {}", db_url);
 
     // let rows = query!("select 1 as one").fetch_one(&db_pool).await?;
     // dbg!(rows); // Prints our rows in the database.

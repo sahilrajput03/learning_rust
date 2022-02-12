@@ -1,0 +1,9 @@
+[package]
+name = "Lesson1"
+version = "0.1.0"
+edition = "2021"
+
+# SAHIL: I created this file to supress warnings from rust-analyzer/lisp from nvim plugin that project not found error.
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
