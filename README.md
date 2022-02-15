@@ -1,6 +1,60 @@
 # Readme
 
-Try out:
+LAST UPDATE: Continue doing `rustlings/exercies/errors-handling/README.md`
+(it has links which I read last). Learning how to handle errors is
+really awesome, i.e.,
+
+- in `errors2.rs` test I learned that with return
+value as `Result<i32, &str>` I am saying that i can return two values
+i.e., `Ok(i32)` or `Err("a string slice")`.
+
+- in `errors3.rs` test I learned that I must return a `Result<a,b>` type
+  from the `main()` function so that I can use `?`, which is basically
+  does like "stop the function in runtime when an error is caused".
+
+- in `errors4.rs` test I learned that I can define an enum like 
+
+```
+enum CreationError {
+	is_negative,
+	is_zero,
+}
+```
+
+which help me to define like return type as `Result<a,CreationError>` so
+that means I can make use of different types of error by defining the
+return type for error as `CreationError` as `Result<a, CreationError>`.
+
+- in `errors5.rs` test I learned that I can make use of somthing
+  like `Result<(), Box<dyn error::Error>>` so that I can make a
+  explicit list of error which aren't catchable distinguishly but on a
+  general basis i.e., any `Err(..)` can be returned for which I have
+  implemented `error:Error`. Yo!! This can be hacky way to catch a list
+  of errors my adding `error::Error` implementations to them and making
+  those errors compatible with the compiler but it isn't good for
+  library coz we need to get what exact error is thrown in each case
+  which is not possible with `Result<a,CreationError>`.
+- in `errors6.rs` test I learned that I can remodel any error to
+  anything with a functional approach that is so awesome and feels like
+  fucntional approach is good way to simply map the error to our own
+  error made up instances, e.g., (from docs).
+
+  ```
+  // LEARN: from docs of map_err:: ~Sahil
+  //
+  // fn stringify(x: u32) -> String { format!("error code: {}", x) }
+  
+  // let x: Result<u32, u32> = Ok(2);
+  // assert_eq!(x.map_err(stringify), Ok(2));
+  
+  // let x: Result<u32, u32> = Err(13);
+  // assert_eq!(x.map_err(stringify), Err("error code: 13".to_string()));
+  ```
+
+***
+
+**Try out:**
+
 - cargo tree: https://doc.rust-lang.org/cargo/commands/cargo-tree.html
 - cargo outdate: https://crates.io/crates/cargo-outdated/0.10.2/dependencies
 

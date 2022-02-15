@@ -17,6 +17,11 @@ fn main() -> Result<(), ParseIntError> {
 	// LEARN: We added ParseIntError in the Resut of main function coz this total_cost function might
 	// throw that error and we need to implement that on main function only.
 
+	// ABOVE LINE THROWS ERROR:
+	// error[E0277]: the `?` operator can only be used in a function that returns `Result` or `Option` (or another type that implements `FromResidual`)
+	// SINCE, WE HAVE TO set return type as `Result` for the main function so that we can use `?`
+	// operator in main's scope.
+
 	if cost > tokens {
 		println!("You can't afford that many!");
 		Ok(())
@@ -32,10 +37,6 @@ pub fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
 	let processing_fee = 1;
 	let cost_per_item = 5;
 	let qty = item_quantity.parse::<i32>()?;
-
-	// let qty = item_quantity.parse::<i32>()?;
-	// ABOVE LINE THROWS ERROR:
-	// error[E0277]: the `?` operator can only be used in a function that returns `Result` or `Option` (or another type that implements `FromResidual`)
 
 	Ok(qty * cost_per_item + processing_fee)
 }
